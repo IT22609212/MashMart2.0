@@ -18,7 +18,7 @@ const UserLoginRoute = require("./Routes/UserLoginRoute.js");
 const UserRoute = require("./Routes/UserManagementRoutes.js");
 const UserProfileRoute = require("./Routes/UserProfileRoute.js");
 const DeliveryRoute = require("./Routes/DeliveryRoute.js");
-
+const InformRoute = require("./Routes/informSupplyRoute.js");
 const PaymentRoute = require("./Routes/PaymentRoute.js");
 
 dotenv.config();
@@ -40,7 +40,7 @@ app.use("/login", UserLoginRoute);
 app.use("/profile", UserProfileRoute);
 app.use("/deliveri", DeliveryRoute);
 app.use("/payments", PaymentRoute);
-
+app.use("/inform", InformRoute);
 
 const PORT = process.env.PORT || 8080;
 

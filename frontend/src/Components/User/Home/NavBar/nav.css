@@ -17,12 +17,12 @@
   cursor: pointer;
 }
 .cart_icon:hover {
-  color: #e76bb9;
+  color: #05043f;
 }
 .nav_btn_log {
-  background-color: #e76bb9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -33,9 +33,9 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .nav_btn_regi {
-  color: #e76bb9;
+  color: #05043f;
   background-color: white;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -50,5 +50,5 @@
   cursor: pointer;
 }
 .navitem:hover {
-  color: #e76bb9;
+  color: #05043f;
 }

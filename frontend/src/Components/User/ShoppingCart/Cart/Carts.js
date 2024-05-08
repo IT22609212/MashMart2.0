@@ -1,8 +1,9 @@
 // Carts.js
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./cart.css";
 import { Link } from "react-router-dom";
+import { useReactToPrint } from "react-to-print";
 import AddPayment from "../Payment/AddPayment";
 import AfterNav from "../../Home/NavBar/AfterNav";
 const Carts = () => {
@@ -45,7 +46,13 @@ const Carts = () => {
       alert("Failed to remove item from cart");
     }
   };
-
+  /*PDF Function */
+  const ComponentsRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => ComponentsRef.current,
+    DocumentTitle: " Details Report",
+    onafterprint: () => alert(" Details Report Successfully Download !"),
+  });
   return (
     <div>
       <AfterNav />
@@ -54,10 +61,13 @@ const Carts = () => {
           Cart
           <span className="sub_topic_mash_mart"> Details</span>{" "}
         </h1>
-        <div className="button-container">
+        <div className="button-container conenn">
           <Link to="/viewall" className="btn_dash_admin">
             Add New
           </Link>
+          <button onClick={handlePrint} className="btn_dash_admin">
+            Download Report
+          </button>
         </div>
         {loading ? (
           <p>Loading...</p>
@@ -69,32 +79,46 @@ const Carts = () => {
               <p>No items in cart</p>
             ) : (
               <div>
-                {carts.map((cart) => (
-                  <div key={cart._id} className="cart_item">
-                    <div className="disdatabx1">
-                      <img
-                        src={cart.image}
-                        alt={cart.name}
-                        className="cart_item_image"
-                      />
+                <div ref={ComponentsRef}>
+                  {carts.map((cart) => (
+                    <div key={cart._id} className="cart_item">
+                      <div className="disdatabx1">
+                        <img
+                          src={cart.image}
+                          alt={cart.name}
+                          className="cart_item_image"
+                        />
+                      </div>
+                      <div className="disdatabx2">
+                        <h3 className="itmnme">{cart.name}</h3>
+                        <p className="itmdetails">Price: ${cart.price}</p>
+                        <p className="itmdetails">Quantity: {cart.qty}</p>
+                        <p className="itmdetails">Total: ${cart.total}</p>
+                      </div>
+                      <div className="disdatabx3">
+                        <button
+                          className="btn_dash_admin_dlt_cart"
+                          onClick={() => handleRemoveFromCart(cart._id)}
+                        >
+                          Delete
+                        </button>
+                        <br></br>
+                        <br></br>
+                        <Link
+                          className="btn_dash_admin"
+                          to={`/update-cart/${cart._id}`}
+                        >
+                          update
+                        </Link>
+                      </div>
                     </div>
-                    <div className="disdatabx2">
-                      <h3 className="itmnme">{cart.name}</h3>
-                      <p className="itmdetails">Price: LKR.{cart.price}</p>
-                      <p className="itmdetails">Quantity: {cart.qty}</p>
-                      <p className="itmdetails">Total: LKR.{cart.total}</p>
-                    </div>
-                    <div className="disdatabx3">
-                      <button className="btn_dash_admin_dlt_cart" onClick={() => handleRemoveFromCart(cart._id)}>
-                        Delete
-                      </button>
-                      <br></br><br></br>
-                      <Link className="btn_dash_admin" to={`/update-cart/${cart._id}`}>update</Link>
-                    </div>
+                  ))}
+                  <div className="total_amount">
+                    <h3>
+                      You have to pay:{" "}
+                      <span className="tot">Rs.{totalAmount.toFixed(2)}</span>
+                    </h3>
                   </div>
-                ))}
-                <div className="total_amount">
-                  <h3>You have to pay: <span className="tot">Rs.{totalAmount.toFixed(2)}</span></h3>
                 </div>
                 {/* Render AddPayment component with cartItems prop */}
                 <AddPayment cartItems={carts} />

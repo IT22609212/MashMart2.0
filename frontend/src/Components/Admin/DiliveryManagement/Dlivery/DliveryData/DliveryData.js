@@ -53,7 +53,7 @@ function DliveryData() {
 
   const handleSearch = () => {
     fetchHandler().then((data) => {
-      const filtered = data.deliveries.filter((driv) =>
+      const filtered = data.deliveries.filter((deliveries) =>
         Object.values(deliveries).some((field) =>
           field.toString().toLowerCase().includes(searchQuery.toLowerCase())
         )

@@ -7,7 +7,7 @@
   align-items: center;
 }
 .welcome_sub_box_admin {
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   border-radius: 5px;
   margin-left: 200px;
   padding: 25px;
@@ -21,5 +21,5 @@
   padding: 10px 0;
   font-size: 30px;
   text-align: center;
-  background-color: #e76bb9;
+  background-color: #05043f;
 }

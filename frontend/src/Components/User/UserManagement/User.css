@@ -8,7 +8,7 @@
   width: 900px;
   margin: 0 auto;
   border-radius: 5px;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .left_colum_user {
@@ -32,15 +32,15 @@
   padding: 3px 10px;
   border-radius: 3px;
   margin: 8px 0;
-  border: 1.5px solid #e76bb9;
+  border: 1.5px solid #05043f;
 }
 .regi-form {
   padding: 25px;
 }
 .admin_form_cneter_btn {
-  background-color: #e76bb9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -57,7 +57,7 @@
 }
 .no-acc-reg {
   font-weight: bold;
-  color: #e76bb9;
+  color: #05043f;
   cursor: pointer;
 }
 .login-topic {
@@ -78,7 +78,7 @@ margin: 0 0 10px 0;
   margin: 20px auto;
   padding: 25px;
   border-radius: 5px;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .btn_con{
@@ -87,9 +87,9 @@ margin: 0 0 10px 0;
   justify-content: center;
 }
 .btn_dash_admin {
-  background-color: #e76bb9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -115,13 +115,13 @@ margin: 0 0 10px 0;
 }
 .btn_dash_admin:hover {
   background-color: white;
-  color: #e76bb9;
-  border: 2px solid #e76bb9;
+  color: #05043f;
+  border: 2px solid #05043f;
 }
 .form_user {
   width: 400px;
   border-radius: 5px;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
 }
@@ -135,9 +135,9 @@ margin: 0 0 10px 0;
   justify-content: space-between;
 }
 .btn_action_user {
-  background-color: #e76bb9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -155,7 +155,7 @@ margin: 0 0 10px 0;
   font-size: 18px;
   border-radius: 3px;
   margin: 0 15px 0 0;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 .auth_box {
   display: flex;

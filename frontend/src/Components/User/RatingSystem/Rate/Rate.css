@@ -18,7 +18,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 25px;
   color: white;
-  background-color: #e76bb9;
+  background-color: #05043f;
 }
 
 .boxrviv {
@@ -40,7 +40,7 @@
   height: auto;
   text-align: start;
   font-weight: bold;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 .rate_details {
   font-size: 15px;
@@ -95,8 +95,8 @@
   font-weight: bold;
   color: white;
   margin: 8px;
-  border: 2px solid #e76bb9;
-  background-color: #e76bb9;
+  border: 2px solid #05043f;
+  background-color: #05043f;
 }
 
 .link_btn_set {
@@ -120,7 +120,7 @@
   border-radius: 3px;
   padding: 4px 10px;
   width: 300px;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 
 .form_rate {
@@ -130,7 +130,7 @@
   width: 450px;
   margin: 25px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 
 .form_lable_rate {
@@ -144,7 +144,7 @@
   margin: 10px 0;
   padding: 4px 10px;
   width: 100%;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 
 .centerbtn_rate {
@@ -158,8 +158,8 @@
   align-items: center;
   display: flex;
   margin: 0 auto;
-  border: 2px solid #e76bb9;
-  background-color: #e76bb9;
+  border: 2px solid #05043f;
+  background-color: #05043f;
 }
 
 .table_details_admin {
@@ -192,8 +192,8 @@
   font-weight: bold;
   color: white;
   margin-right: 20px;
-  border: 2px solid #e76bb9;
-  background-color: #e76bb9;
+  border: 2px solid #05043f;
+  background-color: #05043f;
 }
 
 .dlt_rate {
@@ -224,7 +224,7 @@
   width: 450px;
   margin: 25px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 .rate-full-box-label {
   font-weight: bold;
@@ -237,7 +237,7 @@
   border-radius: 3px;
   margin: 10px 0;
   padding: 4px 10px;
-  border: 2px solid #e76bb9;
+  border: 2px solid #05043f;
 }
 .rate_topic {
   font-size: 45px;

@@ -53,8 +53,8 @@ function VehicalDetails() {
 
   const handleSearch = () => {
     fetchHandler().then((data) => {
-      const filtered = data.driv.filter((driv) =>
-        Object.values(driv).some((field) =>
+      const filtered = data.vehi.filter((vehi) =>
+        Object.values(vehi).some((field) =>
           field.toString().toLowerCase().includes(searchQuery.toLowerCase())
         )
       );

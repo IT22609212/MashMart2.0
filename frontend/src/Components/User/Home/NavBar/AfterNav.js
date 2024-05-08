@@ -29,13 +29,6 @@ function AfterNav() {
             >
               Ratings
             </h3>
-            <h3
-              className="navitem"
-              onClick={() => (window.location.href = "/")}
-            >
-            LogOut
-            </h3>
-
             <FaShoppingCart
               className="cart_icon"
               onClick={() => (window.location.href = "/view-cart")}

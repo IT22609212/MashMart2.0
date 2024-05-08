@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 import { useReactToPrint } from "react-to-print";
 import Sidebar from "../../AdminDashBord/SideBar/Sidebar";
 
@@ -47,7 +46,7 @@ function LowStockInventoryItem() {
   };
   return (
     <div>
-      <Sidebar/>
+      <Sidebar />
       <div className="children_div_admin">
         <div className="dash_button_set">
           <tr>
@@ -103,7 +102,12 @@ function LowStockInventoryItem() {
                     <td className="admin_tbl_td">{item.price}</td>
                     <td className="admin_tbl_td">{item.description}</td>
                     <th className="admin_tbl_td">
-                      <button  className="btn_dash_admin">infrom Supplier</button>
+                      <button
+                        className="btn_dash_admin"
+                        onClick={() => (window.location.href = "/infromsupply")}
+                      >
+                        infrom Supplier
+                      </button>
                     </th>
                   </tr>
                 ))}

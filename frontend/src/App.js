@@ -68,6 +68,8 @@ import AdminDash from "./Components/Admin/AdminDashBord/Dash/AdminDash";
 import Home from "./Components/User/Home/Home";
 import BeforHome from "./Components/User/Home/BeforHome";
 import Accept from "./Components/Admin/DiliveryManagement/Dlivery/Accept/Accept";
+import AdminLogin from "./Components/Admin/AdminLogin/AdminLogin";
+import InformSupply from "./Components/Admin/InventroyManegment/InformSupply/InformSupply";
 
 function App() {
   return (
@@ -93,6 +95,8 @@ function App() {
           <Route path="/updateaccount/:id" element={<UserUpdateAccount />} />
 
           {/* --------------- ADMIN Side ---------------*/}
+          {/*Admin Home*/}
+          <Route exact path="/admin/login" element={<AdminLogin />} />
           {/*Admin Home*/}
           <Route exact path="/admin" element={<AdminDash />} />
           {/*Dilivery Management*/}
@@ -134,6 +138,7 @@ function App() {
             path="/updateinventoryitem/:id"
             element={<UpdateInventory />}
           />
+          <Route path="/infromsupply" element={<InformSupply />} />
           {/*Employe Manegment*/}
           <Route path="/addemployee" element={<AddEmploye />} />
           <Route path="/employeedetails" element={<EmployeDetails />} />

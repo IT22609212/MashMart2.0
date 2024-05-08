@@ -10,12 +10,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #E76BB9; /* Color of the scrollbar handle */
+  background: #05043f; /* Color of the scrollbar handle */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #E76BB9; /* Color of the scrollbar handle on hover */
+  background: #05043f; /* Color of the scrollbar handle on hover */
 }
 
 .children_div_admin {
@@ -32,9 +32,9 @@
 }
 
 .btn_dash_admin {
-  background-color: #E76BB9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #E76BB9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
@@ -71,8 +71,8 @@
 }
 .btn_dash_admin:hover {
   background-color: white;
-  color: #E76BB9;
-  border: 2px solid #E76BB9;
+  color: #05043f;
+  border: 2px solid #05043f;
 }
 
 .serch_inpt {
@@ -81,7 +81,7 @@
   font-size: 18px;
   border-radius: 3px;
   margin: 0 15px 0 0;
-  border: 2px solid #E76BB9;
+  border: 2px solid #05043f;
 }
 
 .topic_inventory {
@@ -91,7 +91,7 @@
 }
 
 .sub_topic_inventory {
-  color: #E76BB9;
+  color: #05043f;
 }
 .spc{
   margin-left: 25px;
@@ -103,7 +103,7 @@
 }
 
 .sub_topic_mash_mart {
-  color: #E76BB9;
+  color: #05043f;
 }
 .tbl_con_admin {
   margin-top: 25px;
@@ -111,7 +111,7 @@
 }
 
 .summry_admindsh {
-  background-color: #E76BB9;
+  background-color: #05043f;
   padding: 20px 15px;
   border-radius: 5px;
   width: 300px;
@@ -132,12 +132,12 @@
 
 .table_details_admin .admin_tbl_th,
 .table_details_admin .admin_tbl_td {
-  border: 2px solid #E76BB9;
+  border: 2px solid #05043f;
   padding: 8px;
 }
 
 .table_details_admin .admin_tbl_th {
-  background-color: #E76BB9;
+  background-color: #05043f;
   color: white;
   font-size: 18px;
 }
@@ -158,7 +158,7 @@
   font-family: "Roboto", sans-serif;
 }
 .item_form_admin {
-  border: 2px solid #E76BB9;
+  border: 2px solid #05043f;
   padding: 25px;
   border-radius: 5px;
   width: 450px;
@@ -175,12 +175,12 @@
   padding: 3px 10px;
   border-radius: 3px;
   margin: 8px 0;
-  border: 1.5px solid #E76BB9;
+  border: 1.5px solid #05043f;
 }
 .admin_form_cneter_btn {
-  background-color: #E76BB9;
+  background-color: #05043f;
   color: white;
-  border: 2px solid #E76BB9;
+  border: 2px solid #05043f;
   font-size: 20px;
   cursor: pointer;
   border-radius: 3px;
