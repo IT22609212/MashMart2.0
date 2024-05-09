@@ -83,6 +83,7 @@ const AddProduct = () => {
                 className="form_box_item_input"
                 type="number"
                 name="price"
+                min="1"
                 value={inputs.price}
                 onChange={handleChange}
                 required

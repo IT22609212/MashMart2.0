@@ -95,10 +95,13 @@ const UpdateProduct = () => {
               <input
                 className="form_box_item_input"
                 type="number"
+                min="1"
                 value={product.price}
                 onChange={(e) =>
                   setProduct({ ...product, price: e.target.value })
                 }
+                required
+
               />
             </div>
             <div>
