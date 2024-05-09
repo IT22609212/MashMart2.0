@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-
 import { useReactToPrint } from "react-to-print";
 import Sidebar from "../../AdminDashBord/SideBar/Sidebar";
 
@@ -16,8 +15,9 @@ function LowStockInventoryItem() {
 
   useEffect(() => {
     fetchHandler().then((data) => {
-      const lowStockItems = data.invent.filter((item) => item.quantity < 50);
-      setInventory(lowStockItems);
+      const lowStockItems = data.invent.filter((item) => item.quantity <= 10);
+      const sortedLowStockItems = lowStockItems.sort((a, b) => a.quantity - b.quantity);
+      setInventory(sortedLowStockItems);
     });
   }, []);
 
@@ -46,7 +46,7 @@ function LowStockInventoryItem() {
   };
   return (
     <div>
-      <Sidebar />
+      <Sidebar/>
       <div className="children_div_admin">
         <div className="dash_button_set">
           <tr>
@@ -102,7 +102,7 @@ function LowStockInventoryItem() {
                     <td className="admin_tbl_td">{item.price}</td>
                     <td className="admin_tbl_td">{item.description}</td>
                     <th className="admin_tbl_td">
-                      <button
+                    <button
                         className="btn_dash_admin"
                         onClick={() => (window.location.href = "/infromsupply")}
                       >

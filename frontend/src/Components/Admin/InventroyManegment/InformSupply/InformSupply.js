@@ -64,6 +64,7 @@ function InformSupply() {
                 value={inputs.quantity}
                 onChange={handleChange}
                 name="quantity"
+                min="1"
                 required
               />
               <br></br>
@@ -75,6 +76,7 @@ function InformSupply() {
                 value={inputs.price}
                 onChange={handleChange}
                 name="price"
+                min="0"
                 required
               />
               <br></br>

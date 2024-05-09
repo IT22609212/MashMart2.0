@@ -16,7 +16,10 @@ function ItemDetails() {
   const [invent, setInventory] = useState([]);
 
   useEffect(() => {
-    fetchHandler().then((data) => setInventory(data.invent));
+    fetchHandler().then((data) => {
+      const sortedInventory = data.invent.sort((a, b) => a.quantity - b.quantity);
+      setInventory(sortedInventory);
+    });
   }, []);
 
   /*Delete Function */
