@@ -42,11 +42,11 @@ function AddVehical() {
       <div className="children_div_admin">
         <h1 className="topic_mash_mart">
           Add New 
-          <span className="sub_topic_mash_mart"> Vehical</span>{" "}
+          <span className="sub_topic_mash_mart"> Vehicle</span>{" "}
         </h1>
         <div className="item_full_box">
           <form className="item_form_admin" onSubmit={handleSubmit}>
-            <label className="form_box_item_lable">Vehical name</label>
+            <label className="form_box_item_lable">Vehicle name</label>
             <br></br>
             <input
               className="form_box_item_input"

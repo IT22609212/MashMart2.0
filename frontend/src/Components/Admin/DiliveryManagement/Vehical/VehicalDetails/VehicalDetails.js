@@ -72,7 +72,7 @@ function VehicalDetails() {
             className="btn_dash_admin"
             onClick={() => (window.location.href = "/addvehical")}
           >
-            Add New Vehical
+            Add New Vehicle
           </button>
 
           <tr>
@@ -99,13 +99,13 @@ function VehicalDetails() {
 
         <div className="tbl_con_admin" ref={ComponentsRef}>
           <h1 className="topic_inventory">
-            Vehicals
+            Vehicles
             <span className="sub_topic_inventory"> Details</span>{" "}
           </h1>
           <table className="table_details_admin">
             <thead>
               <tr className="admin_tbl_tr">
-                <th className="admin_tbl_th">vehical name</th>
+                <th className="admin_tbl_th">vehicle name</th>
                 <th className="admin_tbl_th">owener phone</th>
                 <th className="admin_tbl_th">owener address</th>
                 <th className="admin_tbl_th">owener gmail</th>

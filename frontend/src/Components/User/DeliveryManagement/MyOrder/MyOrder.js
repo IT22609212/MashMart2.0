@@ -65,7 +65,7 @@ function MyOrder() {
               <th className="admin_tbl_th">name</th>
               <th className="admin_tbl_th">gmail</th>
               <th className="admin_tbl_th">phone</th>
-              <th className="admin_tbl_th">locatin</th>
+              <th className="admin_tbl_th">location</th>
               <th className="admin_tbl_th">status</th>
             </tr>
           </thead>
