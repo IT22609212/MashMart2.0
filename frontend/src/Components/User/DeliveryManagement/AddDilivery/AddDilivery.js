@@ -78,6 +78,7 @@ function AddDilivery() {
             <input
               className="form_box_item_input"
               type="text"
+              pattern="[0-9]{10}" 
               value={inputs.phone}
               onChange={handleChange}
               name="phone"

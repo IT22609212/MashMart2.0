@@ -21,7 +21,7 @@ const Sidebar = ({ children }) => {
                 className="nav_item"
                 onClick={() => (window.location.href = "/delivrydata")}
               >
-                Dilivery
+                Delivery
               </p>
               <p
                 className="nav_item"
@@ -33,7 +33,7 @@ const Sidebar = ({ children }) => {
                 className="nav_item"
                 onClick={() => (window.location.href = "/inventoryitemdetails")}
               >
-                Inventroy
+                Inventory
               </p>
               <p
                 className="nav_item"

@@ -52,7 +52,7 @@ function Accept() {
       <Sidebar />
       <div className="children_div_admin">
         <h1 className="topic_mash_mart">
-          Dilivery
+          Delivery
           <span className="sub_topic_mash_mart">Accept Form</span>{" "}
         </h1>
 
@@ -91,7 +91,7 @@ function Accept() {
               readOnly
             />
             <br></br>
-            <label className="form_box_item_lable">locatin</label>
+            <label className="form_box_item_lable">location</label>
             <br></br>
             <input
               className="form_box_item_input"

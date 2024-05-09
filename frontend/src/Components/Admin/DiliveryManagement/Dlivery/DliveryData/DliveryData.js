@@ -95,7 +95,7 @@ function DliveryData() {
               className="btn_dash_admin gsp"
               onClick={() => (window.location.href = "/vehicaldetails")}
             >
-              Vehical
+              Vehicle
             </button>
             <button className="btn_dash_admin" onClick={handlePrint}>
               Generate Report
@@ -114,7 +114,7 @@ function DliveryData() {
                 <th className="admin_tbl_th">name</th>
                 <th className="admin_tbl_th">gmail</th>
                 <th className="admin_tbl_th">phone</th>
-                <th className="admin_tbl_th">locatin</th>
+                <th className="admin_tbl_th">location</th>
                 <th className="admin_tbl_th">status</th>
                 <th className="admin_tbl_th">action</th>
               </tr>
