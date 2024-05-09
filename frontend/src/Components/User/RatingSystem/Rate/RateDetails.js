@@ -42,12 +42,12 @@ const RateDetails = () => {
         <div className="film_box_details">
           <h1 className="cen_h1">Review And Ratings</h1>
           <div className="link_btn_set">
-            <button
+            {/* <button
               className="add_rate"
               onClick={() => (window.location.href = "./addrate")}
             >
               Add Rate
-            </button>
+            </button> */}
             <div>
               <td className="">
                 <input

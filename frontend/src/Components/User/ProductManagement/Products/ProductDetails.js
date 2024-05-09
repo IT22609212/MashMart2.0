@@ -58,6 +58,12 @@ const ProductDetails = () => {
           <p className="itmname">Price: ${price}</p>
           <p className="itmname">Code: {code}</p>
           <button className="cart_cneter_btn" onClick={handleAddToCart}>Add to Cart</button>
+          <button
+              className="cart_cneter_btn"
+              onClick={() => (window.location.href = "/addrate")}
+            >
+              Add Rate
+            </button>
           {cartMessage && <div>{cartMessage}</div>}
         </div>
       </div>
