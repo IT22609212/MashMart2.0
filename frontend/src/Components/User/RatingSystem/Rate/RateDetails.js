@@ -68,7 +68,7 @@ const RateDetails = () => {
               className="add_rate"
               onClick={() => (window.location.href = "./myrate")}
             >
-              My Rate
+              My Feedback
             </button>
           </div>
           <div className="cen_box"></div>

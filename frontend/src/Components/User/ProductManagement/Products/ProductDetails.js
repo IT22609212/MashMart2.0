@@ -62,7 +62,7 @@ const ProductDetails = () => {
               className="cart_cneter_btn"
               onClick={() => (window.location.href = "/addrate")}
             >
-              Add Rate
+              Add Feedback
             </button>
           {cartMessage && <div>{cartMessage}</div>}
         </div>
