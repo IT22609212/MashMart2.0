@@ -27,7 +27,7 @@ function AfterNav() {
               className="navitem"
               onClick={() => (window.location.href = "/ratedetails")}
             >
-              Ratings
+              Feedback
             </h3>
             <FaShoppingCart
               className="cart_icon"

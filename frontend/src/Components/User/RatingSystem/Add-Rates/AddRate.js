@@ -72,7 +72,7 @@ function AddRate() {
         <div className="rate-full-box">
           <div className="">
             <h1 className="rate_topic">
-              Add <span className="rate-us">Rate</span>{" "}
+              Add <span className="rate-us">Feedback</span>{" "}
             </h1>
             <form onSubmit={handleSubmit} className="rate-full-box-form">
             <label className="rate-full-box-label">img url</label>
@@ -142,7 +142,7 @@ function AddRate() {
               />
               <br />
               <button type="submit" className="centerbtn_rate">
-                Add Rate
+                Add Feedback
               </button>
             </form>
           </div>
